@@ -1,0 +1,20 @@
+{
+    "name": "@coin98/coin98-starship-cw",
+    "version": "0.1.0",
+    "description": "Smart-contract for Cosmos blockchain",
+    "author": "Coin98 Labs",
+    "license": "Apache-2.0",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "scripts": {
+      "build:rs": "cargo build --lib --target wasm32-unknown-unknown --release",
+      "build:rs:optimized": "docker run --rm -v \"$(pwd)\":/code cosmwasm/rust-optimizer:0.15.0",
+      "schema:rs": "cargo run --bin schema",
+      "test:rs": "cargo test -- --nocapture"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/coin98/coin98-starship-cw.git"
+    }
+  }
+  
