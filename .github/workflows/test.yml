@@ -16,8 +16,7 @@ jobs:
         - name: Install Rust
           uses: ATiltedTree/setup-rust@v1
           with:
-            toolchain: 1.75.0
-            targets: wasm32-unknown-unknown
+            rust-version: ${{ matrix.rust }}
         - name: Compile
           run: cargo build --lib --target wasm32-unknown-unknown --release
         - name: Test
