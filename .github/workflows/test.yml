@@ -26,8 +26,7 @@ jobs:
         - name: Compile
           run: cargo build --lib --target wasm32-unknown-unknown --release
 
-        - name: Move to tests folder
-          run: cd tests
-
         - name: Test
-          run: cargo test -- --nocapture
+          run: |
+            cd tests
+            cargo test -- --nocapture
