@@ -1,0 +1,11 @@
+[workspace]
+members = [
+  "base",
+  "hello-world",
+]
+
+[workspace.dependencies]
+cosmwasm-std = "1.5.2"
+cosmwasm-schema = { workspace = true }
+cw-storage-plus = "1.0.1"
+hello-world = { path = "../contracts/hello-world" }
