@@ -7,8 +7,10 @@
 /node_modules
 /package-lock.json
 /programs/*/tests/fixtures
-/target
 /yarn-error.log
 /yarn.lock
 /.prettierrc
 .vscode
+/target
+tests/target
+tests/Cargo.lock
