@@ -1,7 +1,6 @@
 [workspace]
 members  = [
   "contracts/hello-world",
-  "tests/*",
 ]
 
 [workspace.dependencies]

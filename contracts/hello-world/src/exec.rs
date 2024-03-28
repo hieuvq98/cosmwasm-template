@@ -4,7 +4,7 @@ use crate::{
     state::COUNT
 };
 
-#[cfg_attr(not(feature = "library"), entry_point)]#[cfg_attr(not(feature = "library"), entry_point)]
+#[cfg_attr(not(feature = "library"), entry_point)]
 pub fn execute(
   deps: DepsMut,
   _env: Env,
