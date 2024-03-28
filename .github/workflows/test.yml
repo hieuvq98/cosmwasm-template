@@ -20,6 +20,9 @@ jobs:
           with:
             rust-version: 1.75.0
 
+        - name: Install wasm32-unknown-unknown
+          run: rustup target add wasm32-unknown-unknown
+
         - name: Compile
           run: cargo build --lib --target wasm32-unknown-unknown --release
 
